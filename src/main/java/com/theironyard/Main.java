@@ -34,6 +34,40 @@ public class Main {
             6 6 6 6 6 6
          */
         // todo: output the expected text
+        for (int x = 1; x <=6; x=x+1){
+            String str = x + " ";
+
+            if (x == 3){
+                continue;
+            }
+
+            if (x > 6){
+                break;
+            }
+
+            for (int y = 1; y <= x; y = y + 1){
+                if (x == 5 && y > 2){
+                    continue;
+                }
+                System.out.print(str);
+            }
+            System.out.println();
+//            for (int y = 1; y <=1; y=y+1){
+//                if (x == 1) {
+//                    System.out.println(str);
+//                }else if (x == 2) {
+//                    System.out.println(str+str);
+//                }else if (x == 3){
+//                    continue;
+//                }else if (x == 4){
+//                    System.out.println(str+str+str+str);
+//                }else if (x == 5){
+//                    System.out.println(str+str);
+//                }else if (x == 6){
+//                    System.out.println(str+str+str+str+str+str);
+//                }else break;
+//            }
+        }
 
 
     }
